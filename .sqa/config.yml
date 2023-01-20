@@ -1,0 +1,58 @@
+config:
+  credentials: []
+  project_repos:
+    bitbucket.org/bkaus/lamem:
+      branch: master
+      repo: https://bitbucket.org/bkaus/lamem
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.8
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      bitbucket.org/bkaus/lamem git:
+        commands:
+        - /usr/bin/env sh .sqa/script.smelly-blue-bison.sh
+        container: qc.acc_surly-myrtle-duck
+  QC.Doc:
+    repos:
+      bitbucket.org/bkaus/lamem find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.woolly-carmine-llama.sh
+        container: qc.doc_greasy-red-beagle
+      bitbucket.org/bkaus/lamem git:
+        commands:
+        - /usr/bin/env sh .sqa/script.nippy-pumpkin-ibis.sh
+        container: qc.doc_slimy-blue-greyhound
+      bitbucket.org/bkaus/lamem markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.sleazy-brass-eleuth.sh
+        container: qc.doc_crabby-pink-cuttlefish
+  QC.Lic:
+    repos:
+      bitbucket.org/bkaus/lamem licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.crabby-yellow-gar.sh
+        container: qc.lic_snoopy-taupe-zebra
+  QC.Sec:
+    repos:
+      bitbucket.org/bkaus/lamem bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.woolly-zucchini-toucan.sh
+        container: qc.sec_droopy-saffron-monster
+  QC.Sty:
+    repos:
+      bitbucket.org/bkaus/lamem flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.ready-gamboge-meerkat.sh
+        container: qc.sty_pretty-cerulean-bullfrog
+  QC.Ver:
+    repos:
+      bitbucket.org/bkaus/lamem get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.wiggy-amber-labradoodle.sh
+        container: qc.ver_skanky-viridian-avocet
+timeout: 5400
