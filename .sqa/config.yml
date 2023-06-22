@@ -15,44 +15,48 @@ sqa_criteria:
     repos:
       github.com/UniMainzGeo/LaMEM git:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-heliotrope-axolotl.sh
-        container: qc.acc_jumpy-cerulean-liger
+        - /usr/bin/env sh .sqa/script.ugly-violet-bombay.sh
+        container: qc.acc_geeky-razzmatazz-forest
   QC.Doc:
     repos:
       github.com/UniMainzGeo/LaMEM find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-seashell-eleuth.sh
-        container: qc.doc_muzzy-violet-buffalo
+        - /usr/bin/env sh .sqa/script.nippy-silver-bulldog.sh
+        container: qc.doc_greasy-azure-hummingbird
       github.com/UniMainzGeo/LaMEM git:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-celadon-catfish.sh
-        container: qc.doc_muzzy-aquamarine-paradise
+        - /usr/bin/env sh .sqa/script.woozy-jade-gibbon.sh
+        container: qc.doc_wiggy-peach-clam
+      github.com/UniMainzGeo/LaMEM markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.grumpy-pumpkin-dormouse.sh
+        container: qc.doc_trippy-lavender-tamarin
   QC.Lic:
     repos:
       github.com/UniMainzGeo/LaMEM licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-myrtle-zebu.sh
-        container: qc.lic_frumpy-olive-lobster
+        - /usr/bin/env sh .sqa/script.beady-cornflower-greyhound.sh
+        container: qc.lic_cranky-violet-giraffe
   QC.Sec:
     repos:
       github.com/UniMainzGeo/LaMEM bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-asparagus-budgerigar.sh
-        container: qc.sec_nerdy-tomato-avocet
+        - /usr/bin/env sh .sqa/script.ready-sapphire-baboon.sh
+        container: qc.sec_snappy-sangria-sparrow
   QC.Sty:
     repos:
       github.com/UniMainzGeo/LaMEM flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-amber-dane.sh
-        container: qc.sty_frumpy-corn-fousek
+        - /usr/bin/env sh .sqa/script.sleazy-corn-earwig.sh
+        container: qc.sty_seedy-wisteria-caterpillar
       github.com/UniMainzGeo/LaMEM jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-ruby-oriole.sh
-        container: qc.sty_sunny-ecru-okapi
+        - /usr/bin/env sh .sqa/script.flabby-aquamarine-falcon.sh
+        container: qc.sty_jumpy-brown-pig
   QC.Ver:
     repos:
       github.com/UniMainzGeo/LaMEM get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-seashell-kingfisher.sh
-        container: qc.ver_shabby-carmine-armadillo
+        - /usr/bin/env sh .sqa/script.freaky-peach-boar.sh
+        container: qc.ver_sickly-orchid-kingfisher
 timeout: 5400
