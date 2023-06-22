@@ -15,44 +15,44 @@ sqa_criteria:
     repos:
       github.com/UniMainzGeo/LaMEM git:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-black-tarsier.sh
-        container: qc.acc_stinky-carmine-mongrel
+        - /usr/bin/env sh .sqa/script.bluesy-green-caiman.sh
+        container: qc.acc_flimsy-maroon-burmese
   QC.Doc:
     repos:
       github.com/UniMainzGeo/LaMEM find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-pink-indri.sh
-        container: qc.doc_blurry-bronze-fox
+        - /usr/bin/env sh .sqa/script.goopy-corn-elephant.sh
+        container: qc.doc_pasty-white-abyssinian
       github.com/UniMainzGeo/LaMEM git:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-cerulean-weasel.sh
-        container: qc.doc_pokey-russet-mandrill
+        - /usr/bin/env sh .sqa/script.crappy-magnolia-dodo.sh
+        container: qc.doc_grumpy-thistle-cassowary
   QC.Lic:
     repos:
       github.com/UniMainzGeo/LaMEM licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-mustard-barracuda.sh
-        container: qc.lic_freaky-ecru-millipede
+        - /usr/bin/env sh .sqa/script.blurry-mauve-dogfish.sh
+        container: qc.lic_gloppy-flax-cheetah
   QC.Sec:
     repos:
       github.com/UniMainzGeo/LaMEM bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-olivine-neanderthal.sh
-        container: qc.sec_gummy-lilac-greyhound
+        - /usr/bin/env sh .sqa/script.freaky-chestnut-barracuda.sh
+        container: qc.sec_cozy-grey-dolphin
   QC.Sty:
     repos:
       github.com/UniMainzGeo/LaMEM flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-cornflower-chinook.sh
-        container: qc.sty_squeaky-scarlet-husky
+        - /usr/bin/env sh .sqa/script.sleazy-white-bloodhound.sh
+        container: qc.sty_wiggy-blue-echidna
       github.com/UniMainzGeo/LaMEM jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-aqua-lynx.sh
-        container: qc.sty_stuffy-rust-oyster
+        - /usr/bin/env sh .sqa/script.messy-orange-fossa.sh
+        container: qc.sty_pretty-orange-dog
   QC.Ver:
     repos:
       github.com/UniMainzGeo/LaMEM get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-bronze-beaver.sh
-        container: qc.ver_lanky-dandelion-emu
+        - /usr/bin/env sh .sqa/script.sickly-burgundy-kudu.sh
+        container: qc.ver_dorky-cyan-manatee
 timeout: 5400
