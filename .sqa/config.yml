@@ -15,48 +15,44 @@ sqa_criteria:
     repos:
       github.com/UniMainzGeo/LaMEM git:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-ultramarine-woodpecker.sh
-        container: qc.acc_chummy-apricot-peccary
+        - /usr/bin/env sh .sqa/script.skimpy-carmine-zonkey.sh
+        container: qc.acc_bluesy-wheat-bloodhound
   QC.Doc:
     repos:
       github.com/UniMainzGeo/LaMEM find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-cerulean-boar.sh
-        container: qc.doc_hazy-ecru-moth
+        - /usr/bin/env sh .sqa/script.randy-lavender-stoat.sh
+        container: qc.doc_homely-corn-quoll
       github.com/UniMainzGeo/LaMEM git:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-malachite-bloodhound.sh
-        container: qc.doc_slimy-magenta-monster
-      github.com/UniMainzGeo/LaMEM markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.wimpy-cobalt-donkey.sh
-        container: qc.doc_randy-magnolia-crocodile
+        - /usr/bin/env sh .sqa/script.squeaky-puce-quetzal.sh
+        container: qc.doc_stealthy-wisteria-mammoth
   QC.Lic:
     repos:
       github.com/UniMainzGeo/LaMEM licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-celadon-alligator.sh
-        container: qc.lic_gamy-burgundy-toad
+        - /usr/bin/env sh .sqa/script.shabby-olivine-koala.sh
+        container: qc.lic_lanky-cinnamon-newt
   QC.Sec:
     repos:
       github.com/UniMainzGeo/LaMEM bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-periwinkle-otter.sh
-        container: qc.sec_wiggy-pumpkin-bloodhound
+        - /usr/bin/env sh .sqa/script.flaky-dandelion-deer.sh
+        container: qc.sec_squeaky-olive-goose
   QC.Sty:
     repos:
       github.com/UniMainzGeo/LaMEM flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-coral-angelfish.sh
-        container: qc.sty_pasty-fuchsia-maltese
+        - /usr/bin/env sh .sqa/script.snippy-cream-kudu.sh
+        container: qc.sty_pretty-viridian-seal
       github.com/UniMainzGeo/LaMEM jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-magenta-dunker.sh
-        container: qc.sty_slaphappy-blue-moorhen
+        - /usr/bin/env sh .sqa/script.tacky-cinnabar-starfish.sh
+        container: qc.sty_skimpy-indigo-chin
   QC.Ver:
     repos:
       github.com/UniMainzGeo/LaMEM get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-smalt-uakari.sh
-        container: qc.ver_freaky-amaranth-angora
+        - /usr/bin/env sh .sqa/script.bluesy-gamboge-anteater.sh
+        container: qc.ver_queasy-pink-gar
 timeout: 5400
